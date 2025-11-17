@@ -1447,238 +1447,161 @@
     </a>
 
     <script>
-        // Données des produits (sans prix affichés)
+        // Données des produits avec vos images réelles
         const products = [
             { 
                 id: 1, 
                 name: "StarLink Standard V4", 
                 category: "autre", 
                 description: "Kit d'accès internet par satellite haut débit", 
-                image: "images/starlink.jpg"
+                image: "images/IMG-20251105-WA0009.jpg"
             },
             {  
                 id: 2, 
                 name: "MikroTik Groov A52", 
                 category: "point-acces", 
                 description: "Point d'accès WiFi 5GHz avec gestion avancée", 
-                image: "images/mikrotik-groov-a52.jpg"
+                image: "images/IMG-20251105-WA0011.jpg"
             },
             { 
                 id: 3, 
                 name: "MikroTik RB951", 
                 category: "routeur", 
                 description: "Routeur WiFi avec 5 ports Gigabit", 
-                image: "images/mikrotik-rb951.jpg"
+                image: "images/IMG-20251105-WA0012.jpg"
             },
             { 
                 id: 4, 
                 name: "MikroTik Ax2", 
                 category: "point-acces", 
                 description: "Point d'accès WiFi 6 compact", 
-                image: "images/mikrotik-ax2.jpg"
+                image: "images/IMG-20251116-WA0004.jpg"
             },
             { 
                 id: 5, 
                 name: "MikroTik Ax3", 
                 category: "point-acces", 
                 description: "Point d'accès WiFi 6 haute performance", 
-                image: "images/mikrotik-ax3.jpg"
+                image: "images/IMG-20251116-WA0005.jpg"
             },
             { 
                 id: 6, 
                 name: "MikroTik L009", 
                 category: "routeur", 
                 description: "Routeur LTE avec port Ethernet", 
-                image: "images/mikrotik-l009.jpg"
+                image: "images/IMG-20251116-WA0006.jpg"
             },
             { 
                 id: 7, 
                 name: "Cody AP1300AC1200", 
                 category: "point-acces", 
                 description: "Point d'accès WiFi double bande 1300Mbps", 
-                image: "images/cody-ap1300ac1200.jpg"
+                image: "images/IMG-20251116-WA0007.jpg"
             },
             { 
                 id: 8, 
                 name: "Ubiquiti Nano M2", 
                 category: "antenne", 
                 description: "Antenne directionnelle 2.4GHz", 
-                image: "images/ubiquiti-nano-m2.jpg"
+                image: "images/IMG-20251116-WA0008.jpg"
             },
             { 
                 id: 9, 
                 name: "Ubiquiti Nano M5", 
                 category: "antenne", 
                 description: "Antenne directionnelle 5GHz", 
-                image: "images/ubiquiti-nano-m5.jpg"
+                image: "images/IMG-20251116-WA0009.jpg"
             },
             { 
                 id: 10, 
                 name: "Ubiquiti Unifi 6", 
                 category: "point-acces", 
                 description: "Point d'accès WiFi 6 professionnel", 
-                image: "images/ubiquiti-unifi-6.jpg"
+                image: "images/IMG-20251116-WA0011.jpg"
             },
             { 
                 id: 11, 
                 name: "Ubiquiti POE 24V", 
                 category: "autre", 
                 description: "Injecteur POE 24V pour équipements Ubiquiti", 
-                image: "images/ubiquiti-poe-24v.jpg"
+                image: "images/IMG-20251116-WA0013.jpg"
             },
             { 
                 id: 12, 
                 name: "Ubiquiti POE 48V", 
                 category: "autre", 
                 description: "Injecteur POE 48V pour équipements Ubiquiti", 
-                image: "images/ubiquiti-poe-48v.jpg"
+                image: "images/IMG-20251116-WA0014.jpg"
             },
             { 
                 id: 13, 
                 name: "Grand Stream 7630LR", 
                 category: "point-acces", 
                 description: "Point d'accès longue portée WiFi 6", 
-                image: "images/grandstream-7630lr.jpg"
+                image: "images/IMG-20251116-WA0015.jpg"
             },
             { 
                 id: 14, 
                 name: "Grand Stream 7660LR", 
                 category: "point-acces", 
                 description: "Point d'accès longue portée WiFi 6 haute densité", 
-                image: "images/grandstream-7660lr.jpg"
+                image: "images/IMG-20251117-WA0003.jpg"
             },
             { 
                 id: 15, 
                 name: "Ubiquiti Lite beam 5AC", 
                 category: "antenne", 
                 description: "Antenne directionnelle 5GHz pour liaisons point à point", 
-                image: "images/ubiquiti-litebeam-5ac.jpg"
+                image: "images/IMG-20251117-WA0004.jpg"
             },
             { 
                 id: 16, 
                 name: "Wavlink AX3000", 
                 category: "point-acces", 
                 description: "Point d'accès WiFi 6 extérieur IP67", 
-                image: "images/wavlink-ax3000.jpg"
+                image: "images/IMG-20251117-WA0005.jpg"
             },
             { 
                 id: 17, 
                 name: "Wavlink AX1800", 
                 category: "point-acces", 
                 description: "Point d'accès WiFi 6 intérieur", 
-                image: "images/wavlink-ax1800.jpg"
+                image: "images/IMG-20251117-WA0006.jpg"
             },
             { 
                 id: 18, 
                 name: "Wavlink IP 67", 
                 category: "point-acces", 
                 description: "Point d'accès extérieur étanche IP67", 
-                image: "images/wavlink-ip67.jpg"
+                image: "images/IMG-20251117-WA0007.jpg"
             },
             { 
                 id: 19, 
                 name: "TP Link Archer C6", 
                 category: "routeur", 
                 description: "Routeur WiFi double bande AC1200", 
-                image: "images/tplink-archer-c6.jpg"
+                image: "images/IMG-20251117-WA0008.jpg"
             },
             { 
                 id: 20, 
                 name: "TP Link Archer C20", 
                 category: "routeur", 
                 description: "Routeur WiFi simple bande N300", 
-                image: "images/tplink-archer-c20.jpg"
+                image: "images/IMG-20251117-WA0009.jpg"
             },
             { 
                 id: 21, 
                 name: "TP Link 840N", 
                 category: "routeur", 
                 description: "Routeur WiFi N300 avec 4 ports LAN", 
-                image: "images/tplink-840n.jpg"
+                image: "images/IMG-20251117-WA0010.jpg"
             },
             { 
                 id: 22, 
                 name: "TP Link CPE 610", 
                 category: "antenne", 
                 description: "Antenne directionnelle 5GHz avec point d'accès intégré", 
-                image: "images/tplink-cpe610.jpg"
-            },
-            { 
-                id: 23, 
-                name: "TP Link CPE 220", 
-                category: "antenne", 
-                description: "Antenne directionnelle 2.4GHz avec point d'accès intégré", 
-                image: "images/tplink-cpe220.jpg"
-            },
-            { 
-                id: 24, 
-                name: "TP Link switch 8 port Gigabit", 
-                category: "switch", 
-                description: "Switch 8 ports Gigabit non-gestionable", 
-                image: "images/tplink-switch-8port.jpg"
-            },
-            { 
-                id: 25, 
-                name: "Mercury B2", 
-                category: "routeur", 
-                description: "Routeur WiFi simple bande", 
-                image: "images/mercury-b2.jpg"
-            },
-            { 
-                id: 26, 
-                name: "NC Link Jumelle 211 M", 
-                category: "antenne", 
-                description: "Antenne directionnelle double polarisation", 
-                image: "images/nclink-jumelle-211m.jpg"
-            },
-            { 
-                id: 27, 
-                name: "NC Link Unique 211", 
-                category: "antenne", 
-                description: "Antenne directionnelle simple polarisation", 
-                image: "images/nclink-unique-211.jpg"
-            },
-            { 
-                id: 28, 
-                name: "Tenda OAP 1200", 
-                category: "point-acces", 
-                description: "Point d'accès extérieur AC1200", 
-                image: "images/tenda-oap1200.jpg"
-            },
-            { 
-                id: 29, 
-                name: "Tenda 03 M2", 
-                category: "point-acces", 
-                description: "Point d'accès WiFi 6 intérieur", 
-                image: "images/tenda-03m2.jpg"
-            },
-            { 
-                id: 30, 
-                name: "Tenda 01 M2", 
-                category: "point-acces", 
-                description: "Point d'accès WiFi 5 intérieur", 
-                image: "images/tenda-01m2.jpg"
-            },
-            { 
-                id: 31, 
-                name: "Tenda F6", 
-                category: "routeur", 
-                description: "Routeur WiFi N300 avec 4 antennes", 
-                image: "images/tenda-f6.jpg"
-            },
-            { 
-                id: 32, 
-                name: "Tenda Switch Gigabit", 
-                category: "switch", 
-                description: "Switch 5 ports Gigabit", 
-                image: "images/tenda-switch-gigabit.jpg"
-            },
-            { 
-                id: 33, 
-                name: "Mini UPS", 
-                category: "autre", 
-                description: "Onduleur mini pour équipements réseaux", 
-                image: "images/mini-ups.jpg"
+                image: "images/IMG-20251117-WA0011.jpg"
             }
         ];
 
@@ -1699,6 +1622,28 @@
                 'autre': 'Autre'
             };
             return categories[category] || 'Autre';
+        }
+
+        // Fonction pour créer un observateur d'intersection pour le lazy loading
+        function createIntersectionObserver() {
+            const options = {
+                root: null,
+                rootMargin: '50px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        observer.unobserve(img);
+                    }
+                });
+            }, options);
+
+            return observer;
         }
 
         // Fonction pour afficher les produits avec pagination
@@ -1729,7 +1674,7 @@
                 
                 productCard.innerHTML = `
                     <div class="product-img">
-                        <img src="${product.image}" alt="${product.name}" onerror="this.src='images/placeholder.jpg'">
+                        <img data-src="${product.image}" alt="${product.name}" class="lazy" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIyMCIgdmlld0JveD0iMCAwIDMwMCAyMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjIwIiBmaWxsPSIjZTVlNWU1Ii8+CjxwYXRoIGQ9Ik0xNTAgODBDMTY2LjU2OSA4MCAxODAgNjYuNTY4NSAxODAgNTBDMTgwIDMzLjQzMTUgMTY2LjU2OSAyMCAxNTAgMjBDMTMzLjQzMSAyMCAxMjAgMzMuNDMxNSAxMjAgNTBDMTIwIDY2LjU2ODUgMTMzLjQzMSA4MCAxNTAgODBaTTE1MCAxMDBDMTMzLjQzMSAxMDAgMTIwIDExMy40MzEgMTIwIDEzMEMxMjAgMTQ2LjU2OSAxMzMuNDMxIDE2MCAxNTAgMTYwQzE2Ni41NjkgMTYwIDE4MCAxNDYuNTY5IDE4MCAxMzBDMTgwIDExMy40MzEgMTY2LjU2OSAxMDAgMTUwIDEwMFoiIGZpbGw9IiNjM2MzYzYiLz4KPC9zdmc+'">
                     </div>
                     <div class="product-info">
                         <span class="product-category">${getCategoryName(product.category)}</span>
@@ -1744,6 +1689,11 @@
                 `;
                 productsGrid.appendChild(productCard);
             });
+            
+            // Initialiser le lazy loading pour les nouvelles images
+            const lazyImages = document.querySelectorAll('img.lazy');
+            const observer = createIntersectionObserver();
+            lazyImages.forEach(img => observer.observe(img));
             
             // Gérer l'affichage du bouton "Voir plus"
             const loadMoreContainer = document.getElementById('loadMoreContainer');
