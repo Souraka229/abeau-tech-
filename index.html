@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABEAU TECH - Solutions WiFi Professionnelles Haut de Gamme au Bénin</title>
+    <meta name="description" content="Expert en solutions WiFi et réseaux professionnels au Bénin. Équipements haut de gamme, installation et support 24/7. Contactez-nous au +229 40 55 07 85">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Variables CSS Premium */
+        :root {
+            --primary: #0a2540;
+            --secondary: #00bfff;
+            --accent: #f8f9fa;
+            --dark: #0d2e52;
+            --light: #ffffff;
+            --gold: #d4af37;
+            --gray: #e9ecef;
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            --radius: 16px;
+            --gradient: linear-gradient(135deg, var(--secondary) 0%, #0099cc 100%);
+            --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f9e076 100%);
+        }
+
+        /* Reset et styles de base Premium */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--primary);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: #495057;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.7s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: var(--light);
+            box-shadow: 0 8px 25px rgba(0, 191, 255, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 191, 255, 0.5);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary);
+            color: var(--light);
+            transform: translateY(-5px);
+        }
+
+        .btn-details {
+            background-color: transparent;
+            color: var(--secondary);
+            border: 2px solid var(--secondary);
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .btn-details:hover {
+            background-color: var(--secondary);
+            color: var(--light);
+            transform: translateY(-3px);
+        }
+
+        .btn-gold {
+            background: var(--gold-gradient);
+            color: var(--primary);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.5);
+        }
+
+        .btn-load-more {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent);
+            border: 2px solid var(--secondary);
+            margin: 2rem auto;
+            display: block;
+        }
+
+        .btn-load-more:hover {
+            background: var(--gradient);
+            color: var(--light);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-1 { margin-bottom: 1rem; }
+        .mb-2 { margin-bottom: 2rem; }
+        .mb-3 { margin-bottom: 3rem; }
+
+        /* Header et Navigation Premium */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--primary);
+            font-weight: 600;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Hero Section Premium */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--light) 0%, #e6f7ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(0, 191, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 191, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(0, 191, 255, 0.08) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease;
+            line-height: 1.1;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease 0.2s both;
+            color: #495057;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        /* About Section Premium */
+        .about {
+            background-color: var(--light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+            color: var(--primary);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient);
+            bottom: -15px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature-card {
+            background: var(--light);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid var(--gray);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, transparent 100%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+            box-shadow: var(--shadow);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+        }
+
+        /* Products Section Premium */
+        .products {
+            background-color: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .products::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 10%, rgba(0, 191, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 90%, rgba(0, 191, 255, 0.05) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .products .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .products-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            background-color: transparent;
+            color: var(--primary);
+            border: 1px solid var(--secondary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--gradient);
+            color: var(--light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 191, 255, 0.3);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .product-card {
+            background: var(--light);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid var(--gray);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .product-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+            box-shadow: var(--shadow);
+        }
+
+        .product-img {
+            height: 220px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #cceeff 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 191, 255, 0.2) 0%, transparent 100%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-img::before {
+            opacity: 1;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 1.75rem;
+        }
+
+        .product-category {
+            display: inline-block;
+            background: var(--gradient);
+            color: var(--light);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .product-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .load-more-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .modal-content {
+            background-color: var(--light);
+            border-radius: var(--radius);
+            width: 100%;
+            max-width: 600px;
+            box-shadow: var(--shadow);
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        .modal-header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            color: var(--primary);
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            color: var(--secondary);
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        /* Services Section Premium */
+        .services {
+            background-color: var(--light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid var(--gray);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, transparent 100%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+            box-shadow: var(--shadow);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+
+        /* Testimonials Section Premium */
+        .testimonials {
+            background-color: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card {
+            background: var(--light);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            margin: 0 auto;
+            max-width: 800px;
+            border: 1px solid var(--gray);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, transparent 100%);
+            z-index: 0;
+        }
+
+        .testimonial-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-weight: 700;
+            margin-right: 1.5rem;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        /* Contact Section Premium */
+        .contact {
+            background-color: var(--light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-top: 0.25rem;
+            flex-shrink: 0;
+        }
+
+        .contact-form {
+            background: var(--light);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--gray);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--gray);
+            background-color: var(--light);
+            color: var(--primary);
+            transition: var(--transition);
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.2);
+            background-color: var(--light);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer Premium */
+        footer {
+            background: var(--primary);
+            padding: 4rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .footer-logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--light);
+        }
+
+        .footer-logo-text span {
+            color: var(--secondary);
+        }
+
+        .footer-links h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+            color: var(--light);
+        }
+
+        .footer-links h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+            font-size: 1.25rem;
+            color: var(--light);
+        }
+
+        .social-link:hover {
+            background: var(--gradient);
+            color: var(--light);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Floating WhatsApp Button Premium */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 65px;
+            height: 65px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Animations Premium */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Responsive Design Premium */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2.25rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: var(--light);
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 6rem 2rem 2rem;
+                transition: var(--transition);
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin: 1rem 0;
+                width: 100%;
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 0.75rem 0;
+                width: 100%;
+                border-bottom: 1px solid var(--gray);
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .features, .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .products-filter {
+                gap: 0.5rem;
+            }
+
+            .filter-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 4rem 0;
+            }
+            
+            .hero {
+                height: 90vh;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 2rem 1.5rem;
+            }
+            
+            .feature-card, .service-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .testimonial-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 1.5rem;
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+
+            .products-filter {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .filter-btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .btn {
+                padding: 0.75rem 1.5rem;
+            }
+
+            .product-info {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="ABEAU TECH" class="logo-img">
+                <div class="logo-text">ABEAU <span>TECH</span></div>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Solutions WiFi Professionnelles Haut de Gamme</h1>
+            <p>Expert en équipements réseaux et solutions WiFi au Bénin depuis 2 ans</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">
+                    <i class="fas fa-box-open"></i> Découvrir nos produits
+                </a>
+                <a href="https://wa.me/22940550785?text=Bonjour%20ABEAU%20TECH%20!%20Je%20suis%20intéressé%20par%20vos%20solutions%20WiFi%20professionnelles.%20Pouvez-vous%20me%20renseigner%20?" class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i> Contact WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title text-center">Spécialistes des solutions WiFi au Bénin</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Couverture Maximale</h3>
+                    <p>Installation de réseaux WiFi couvrant jusqu'à 1000m² avec technologie dernier cri</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sécurité Renforcée</h3>
+                    <p>Configuration avancée avec protection contre les intrusions et accès non autorisés</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Support 24/7</h3>
+                    <p>Assistance technique disponible en permanence pour résoudre vos problèmes rapidement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title text-center">Nos Produits</h2>
+            <div class="products-filter" id="productsFilter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="routeur">Routeurs</button>
+                <button class="filter-btn" data-filter="antenne">Antennes</button>
+                <button class="filter-btn" data-filter="switch">Switches</button>
+                <button class="filter-btn" data-filter="point-acces">Points d'accès</button>
+                <button class="filter-btn" data-filter="autre">Autres</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Les produits seront ajoutés dynamiquement par JavaScript -->
+            </div>
+            <div class="load-more-container" id="loadMoreContainer">
+                <button class="btn btn-load-more" id="loadMoreBtn">
+                    <i class="fas fa-plus"></i> Voir plus de produits
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal pour les détails du produit -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalProductName">Nom du produit</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="productRequestForm">
+                    <div class="form-group">
+                        <label for="clientName" class="form-label">Nom complet</label>
+                        <input type="text" id="clientName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientPhone" class="form-label">Téléphone</label>
+                        <input type="tel" id="clientPhone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientEmail" class="form-label">Email</label>
+                        <input type="email" id="clientEmail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="clientMessage" class="form-label">Message (optionnel)</label>
+                        <textarea id="clientMessage" class="form-control" placeholder="Informations supplémentaires ou questions..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> Envoyer la demande via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title text-center">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Installation</h3>
+                    <p>Installation professionnelle de vos équipements réseaux avec configuration optimisée</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance</h3>
+                    <p>Contrats de maintenance pour assurer le bon fonctionnement de votre réseau</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support Technique</h3>
+                    <p>Assistance à distance ou sur site pour résoudre vos problèmes techniques</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Conseil</h3>
+                    <p>Audit et conseils pour optimiser votre infrastructure réseau</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">Nos Clients Parlent de Nous</h2>
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"ABEAU TECH a installé notre réseau WiFi d'entreprise avec une couverture parfaite sur tout notre bâtiment de 3 étages. Le support technique est réactif et professionnel."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JD</div>
+                    <div>
+                        <h4>Jean D.</h4>
+                        <p>Directeur IT, Cotonou</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title text-center">Contactez-nous</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>COTONOU devant SONEB gbegamey</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+229 40 55 07 85</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>gbaguidi.cyr@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+229 40 55 07 85</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nom complet</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Téléphone</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="ABEAU TECH" class="footer-logo-img">
+                        <div class="footer-logo-text">ABEAU <span>TECH</span></div>
+                    </div>
+                    <p>Spécialistes en équipements réseaux et solutions WiFi haut débit au Bénin depuis 2 ans.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#products">Produits</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Nos services</h3>
+                    <ul>
+                        <li><a href="#services">Installation</a></li>
+                        <li><a href="#services">Maintenance</a></li>
+                        <li><a href="#services">Support technique</a></li>
+                        <li><a href="#services">Conseil</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> COTONOU devant SONEB gbegamey</li>
+                        <li><i class="fas fa-phone-alt"></i> +229 40 55 07 85</li>
+                        <li><i class="fas fa-envelope"></i> gbaguidi.cyr@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ABEAU TECH. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/22940550785?text=Bonjour%20ABEAU%20TECH%20!%20Je%20suis%20intéressé%20par%20vos%20solutions%20WiFi%20professionnelles.%20Pouvez-vous%20me%20renseigner%20?" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Données des produits (sans prix affichés)
+        const products = [
+            { 
+                id: 1, 
+                name: "StarLink Standard V4", 
+                category: "autre", 
+                description: "Kit d'accès internet par satellite haut débit", 
+                image: "images/starlink.jpg"
+            },
+            {  
+                id: 2, 
+                name: "MikroTik Groov A52", 
+                category: "point-acces", 
+                description: "Point d'accès WiFi 5GHz avec gestion avancée", 
+                image: "images/mikrotik-groov-a52.jpg"
+            },
+            { 
+                id: 3, 
+                name: "MikroTik RB951", 
+                category: "routeur", 
+                description: "Routeur WiFi avec 5 ports Gigabit", 
+                image: "images/mikrotik-rb951.jpg"
+            },
+            { 
+                id: 4, 
+                name: "MikroTik Ax2", 
+                category: "point-acces", 
+                description: "Point d'accès WiFi 6 compact", 
+                image: "images/mikrotik-ax2.jpg"
+            },
+            { 
+                id: 5, 
+                name: "MikroTik Ax3", 
+                category: "point-acces", 
+                description: "Point d'accès WiFi 6 haute performance", 
+                image: "images/mikrotik-ax3.jpg"
+            },
+            { 
+                id: 6, 
+                name: "MikroTik L009", 
+                category: "routeur", 
+                description: "Routeur LTE avec port Ethernet", 
+                image: "images/mikrotik-l009.jpg"
+            },
+            { 
+                id: 7, 
+                name: "Cody AP1300AC1200", 
+                category: "point-acces", 
+                description: "Point d'accès WiFi double bande 1300Mbps", 
+                image: "images/cody-ap1300ac1200.jpg"
+            },
+            { 
+                id: 8, 
+                name: "Ubiquiti Nano M2", 
+                category: "antenne", 
+                description: "Antenne directionnelle 2.4GHz", 
+                image: "images/ubiquiti-nano-m2.jpg"
+            },
+            { 
+                id: 9, 
+                name: "Ubiquiti Nano M5", 
+                category: "antenne", 
+                description: "Antenne directionnelle 5GHz", 
+                image: "images/ubiquiti-nano-m5.jpg"
+            },
+            { 
+                id: 10, 
+                name: "Ubiquiti Unifi 6", 
+                category: "point-acces", 
+                description: "Point d'accès WiFi 6 professionnel", 
+                image: "images/ubiquiti-unifi-6.jpg"
+            },
+            { 
+                id: 11, 
+                name: "Ubiquiti POE 24V", 
+                category: "autre", 
+                description: "Injecteur POE 24V pour équipements Ubiquiti", 
+                image: "images/ubiquiti-poe-24v.jpg"
+            },
+            { 
+                id: 12, 
+                name: "Ubiquiti POE 48V", 
+                category: "autre", 
+                description: "Injecteur POE 48V pour équipements Ubiquiti", 
+                image: "images/ubiquiti-poe-48v.jpg"
+            },
+            { 
+                id: 13, 
+                name: "Grand Stream 7630LR", 
+                category: "point-acces", 
+                description: "Point d'accès longue portée WiFi 6", 
+                image: "images/grandstream-7630lr.jpg"
+            },
+            { 
+                id: 14, 
+                name: "Grand Stream 7660LR", 
+                category: "point-acces", 
+                description: "Point d'accès longue portée WiFi 6 haute densité", 
+                image: "images/grandstream-7660lr.jpg"
+            },
+            { 
+                id: 15, 
+                name: "Ubiquiti Lite beam 5AC", 
+                category: "antenne", 
+                description: "Antenne directionnelle 5GHz pour liaisons point à point", 
+                image: "images/ubiquiti-litebeam-5ac.jpg"
+            },
+            { 
+                id: 16, 
+                name: "Wavlink AX3000", 
+                category: "point-acces", 
+                description: "Point d'accès WiFi 6 extérieur IP67", 
+                image: "images/wavlink-ax3000.jpg"
+            },
+            { 
+                id: 17, 
+                name: "Wavlink AX1800", 
+                category: "point-acces", 
+                description: "Point d'accès WiFi 6 intérieur", 
+                image: "images/wavlink-ax1800.jpg"
+            },
+            { 
+                id: 18, 
+                name: "Wavlink IP 67", 
+                category: "point-acces", 
+                description: "Point d'accès extérieur étanche IP67", 
+                image: "images/wavlink-ip67.jpg"
+            },
+            { 
+                id: 19, 
+                name: "TP Link Archer C6", 
+                category: "routeur", 
+                description: "Routeur WiFi double bande AC1200", 
+                image: "images/tplink-archer-c6.jpg"
+            },
+            { 
+                id: 20, 
+                name: "TP Link Archer C20", 
+                category: "routeur", 
+                description: "Routeur WiFi simple bande N300", 
+                image: "images/tplink-archer-c20.jpg"
+            },
+            { 
+                id: 21, 
+                name: "TP Link 840N", 
+                category: "routeur", 
+                description: "Routeur WiFi N300 avec 4 ports LAN", 
+                image: "images/tplink-840n.jpg"
+            },
+            { 
+                id: 22, 
+                name: "TP Link CPE 610", 
+                category: "antenne", 
+                description: "Antenne directionnelle 5GHz avec point d'accès intégré", 
+                image: "images/tplink-cpe610.jpg"
+            },
+            { 
+                id: 23, 
+                name: "TP Link CPE 220", 
+                category: "antenne", 
+                description: "Antenne directionnelle 2.4GHz avec point d'accès intégré", 
+                image: "images/tplink-cpe220.jpg"
+            },
+            { 
+                id: 24, 
+                name: "TP Link switch 8 port Gigabit", 
+                category: "switch", 
+                description: "Switch 8 ports Gigabit non-gestionable", 
+                image: "images/tplink-switch-8port.jpg"
+            },
+            { 
+                id: 25, 
+                name: "Mercury B2", 
+                category: "routeur", 
+                description: "Routeur WiFi simple bande", 
+                image: "images/mercury-b2.jpg"
+            },
+            { 
+                id: 26, 
+                name: "NC Link Jumelle 211 M", 
+                category: "antenne", 
+                description: "Antenne directionnelle double polarisation", 
+                image: "images/nclink-jumelle-211m.jpg"
+            },
+            { 
+                id: 27, 
+                name: "NC Link Unique 211", 
+                category: "antenne", 
+                description: "Antenne directionnelle simple polarisation", 
+                image: "images/nclink-unique-211.jpg"
+            },
+            { 
+                id: 28, 
+                name: "Tenda OAP 1200", 
+                category: "point-acces", 
+                description: "Point d'accès extérieur AC1200", 
+                image: "images/tenda-oap1200.jpg"
+            },
+            { 
+                id: 29, 
+                name: "Tenda 03 M2", 
+                category: "point-acces", 
+                description: "Point d'accès WiFi 6 intérieur", 
+                image: "images/tenda-03m2.jpg"
+            },
+            { 
+                id: 30, 
+                name: "Tenda 01 M2", 
+                category: "point-acces", 
+                description: "Point d'accès WiFi 5 intérieur", 
+                image: "images/tenda-01m2.jpg"
+            },
+            { 
+                id: 31, 
+                name: "Tenda F6", 
+                category: "routeur", 
+                description: "Routeur WiFi N300 avec 4 antennes", 
+                image: "images/tenda-f6.jpg"
+            },
+            { 
+                id: 32, 
+                name: "Tenda Switch Gigabit", 
+                category: "switch", 
+                description: "Switch 5 ports Gigabit", 
+                image: "images/tenda-switch-gigabit.jpg"
+            },
+            { 
+                id: 33, 
+                name: "Mini UPS", 
+                category: "autre", 
+                description: "Onduleur mini pour équipements réseaux", 
+                image: "images/mini-ups.jpg"
+            }
+        ];
+
+        // Variables pour la pagination
+        let currentPage = 1;
+        const productsPerPage = 6;
+        let currentFilter = 'all';
+        let filteredProducts = [];
+        let currentProduct = null;
+
+        // Fonction pour obtenir le nom de la catégorie
+        function getCategoryName(category) {
+            const categories = {
+                'routeur': 'Routeur',
+                'antenne': 'Antenne',
+                'switch': 'Switch',
+                'point-acces': 'Point d\'accès',
+                'autre': 'Autre'
+            };
+            return categories[category] || 'Autre';
+        }
+
+        // Fonction pour afficher les produits avec pagination
+        function displayProducts(page = 1, filter = 'all') {
+            const productsGrid = document.getElementById('productsGrid');
+            
+            // Filtrer les produits si nécessaire
+            if (filter !== currentFilter) {
+                currentFilter = filter;
+                filteredProducts = filter === 'all' 
+                    ? products 
+                    : products.filter(product => product.category === filter);
+                currentPage = 1;
+            }
+            
+            // Calculer les produits à afficher
+            const startIndex = (page - 1) * productsPerPage;
+            const endIndex = startIndex + productsPerPage;
+            const productsToShow = filteredProducts.slice(0, endIndex);
+            
+            // Effacer et réafficher les produits
+            productsGrid.innerHTML = '';
+            
+            productsToShow.forEach((product, index) => {
+                const productCard = document.createElement('div');
+                productCard.className = `product-card ${index >= startIndex ? 'visible' : ''}`;
+                productCard.style.animationDelay = `${(index % productsPerPage) * 0.1}s`;
+                
+                productCard.innerHTML = `
+                    <div class="product-img">
+                        <img src="${product.image}" alt="${product.name}" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">${getCategoryName(product.category)}</span>
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <div class="product-actions">
+                            <button class="btn btn-details" data-product-id="${product.id}">
+                                <i class="fas fa-info-circle"></i> Plus de détails
+                            </button>
+                        </div>
+                    </div>
+                `;
+                productsGrid.appendChild(productCard);
+            });
+            
+            // Gérer l'affichage du bouton "Voir plus"
+            const loadMoreContainer = document.getElementById('loadMoreContainer');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            
+            if (endIndex >= filteredProducts.length) {
+                loadMoreContainer.style.display = 'none';
+            } else {
+                loadMoreContainer.style.display = 'block';
+                loadMoreBtn.onclick = () => {
+                    currentPage++;
+                    displayProducts(currentPage, currentFilter);
+                };
+            }
+            
+            // Ajouter les événements aux boutons "Plus de détails"
+            document.querySelectorAll('.btn-details').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-product-id'));
+                    openProductModal(productId);
+                });
+            });
+        }
+
+        // Fonction pour ouvrir le modal de demande de produit
+        function openProductModal(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            
+            currentProduct = product;
+            const modal = document.getElementById('productModal');
+            const productName = document.getElementById('modalProductName');
+            
+            productName.textContent = product.name;
+            modal.style.display = 'flex';
+        }
+
+        // Fonction pour fermer le modal
+        function closeProductModal() {
+            const modal = document.getElementById('productModal');
+            modal.style.display = 'none';
+            currentProduct = null;
+        }
+
+        // Initialisation du site
+        document.addEventListener('DOMContentLoaded', function() {
+            // Afficher les premiers produits au chargement
+            displayProducts();
+            
+            // Gestion du filtre des produits
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Retirer la classe active de tous les boutons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Ajouter la classe active au bouton cliqué
+                    this.classList.add('active');
+                    // Filtrer les produits
+                    const filter = this.getAttribute('data-filter');
+                    displayProducts(1, filter);
+                });
+            });
+            
+            // Menu mobile
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                this.innerHTML = navLinks.classList.contains('active') 
+                    ? '<i class="fas fa-times"></i>' 
+                    : '<i class="fas fa-bars"></i>';
+            });
+            
+            // Fermer le menu mobile en cliquant sur un lien
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+            
+            // Gestion du formulaire de demande de produit
+            const productRequestForm = document.getElementById('productRequestForm');
+            if (productRequestForm) {
+                productRequestForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    if (!currentProduct) return;
+                    
+                    // Récupérer les valeurs du formulaire
+                    const name = document.getElementById('clientName').value;
+                    const phone = document.getElementById('clientPhone').value;
+                    const email = document.getElementById('clientEmail').value;
+                    const message = document.getElementById('clientMessage').value;
+                    
+                    // Construire le message WhatsApp optimisé
+                    const whatsappMessage = `Bonjour ABEAU TECH !%0A%0AJe suis intéressé par le produit suivant :%0A*${currentProduct.name}*%0A%0AMes coordonnées :%0A👤 Nom : ${name}%0A📞 Téléphone : ${phone}%0A📧 Email : ${email || 'Non renseigné'}%0A%0A${message ? `Message : ${message}` : ''}%0A%0APouvez-vous me donner plus d'informations et le prix ?`;
+                    const whatsappUrl = `https://wa.me/22940550785?text=${whatsappMessage}`;
+                    
+                    // Rediriger vers WhatsApp
+                    window.open(whatsappUrl, '_blank');
+                    
+                    // Fermer le modal
+                    closeProductModal();
+                    
+                    // Réinitialiser le formulaire
+                    productRequestForm.reset();
+                });
+            }
+            
+            // Gestion du formulaire de contact général
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Récupérer les valeurs du formulaire
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const phone = document.getElementById('phone').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Construire le message WhatsApp optimisé
+                    const whatsappMessage = `Bonjour ABEAU TECH !%0A%0AJe m'appelle ${name} et je suis intéressé par vos services.%0A%0AMon message : ${message}%0A%0AMes coordonnées :%0A📧 Email : ${email}%0A📞 Téléphone : ${phone || 'Non renseigné'}%0A%0APouvez-vous me recontacter pour discuter de mes besoins ?`;
+                    const whatsappUrl = `https://wa.me/22940550785?text=${whatsappMessage}`;
+                    
+                    // Rediriger vers WhatsApp
+                    window.open(whatsappUrl, '_blank');
+                    
+                    // Réinitialiser le formulaire
+                    contactForm.reset();
+                });
+            }
+            
+            // Fermer le modal
+            const closeModalBtn = document.getElementById('closeModal');
+            const modal = document.getElementById('productModal');
+            
+            closeModalBtn.addEventListener('click', closeProductModal);
+            
+            // Fermer le modal en cliquant en dehors
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeProductModal();
+                }
+            });
+            
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.98)';
+                    header.style.backdropFilter = 'blur(15px)';
+                    header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.08)';
+                } else {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                    header.style.backdropFilter = 'blur(15px)';
+                    header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.08)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
